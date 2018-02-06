@@ -1,0 +1,145 @@
+{
+    "questions":
+    [
+        {
+            "c": ["SQS"],
+            "q": "What is the default VisibilityTimeout for SQS?",
+            "a": "30 Seconds"
+        },
+        {
+            "c": ["SQS"],
+            "q": "What is the maximum Visibility Timeout for SQS?",
+            "a": "12 hours"
+        },
+        {
+            "c": ["SQS"],
+            "q": "What's the maximum number of in-flight messages for a standard SQS queue?",
+            "a": "120,000"
+        },
+        {
+            "c": ["SQS"],
+            "q": "What's the maximum number of in-flight messages for a FIFO queue?",
+            "a": "20,000"
+        },
+        {
+            "c": ["SQS"],
+            "q": "What's the name of the error message if you exceed the SQS in-flight maximum?",
+            "a": "OverLimit"
+        },
+        {
+            "c": ["SQS"],
+            "q": "What's the SQS API that is used to change the VisibilityTimeout?",
+            "a": "ChangeMessageVisibility"
+        },
+        {
+            "c": ["SQS"],
+            "q": "What is the maximum message retention period for an SQS queue?",
+            "a": "14 days"
+        },
+        {
+            "c": ["SQS"],
+            "q": "What is the maximum message size in SQS?",
+            "a": "20 seconds"
+        },
+        {
+            "c": ["SQS"],
+            "q": "What is the maximum DeliveryDelay of an SQS queue?",
+            "a": "15 minutes"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What's the maximum size of an instance store boot volume",
+            "a": "10 GiB"
+        },
+        {
+            "c": ["EC2"],
+            "q": "Can a volume in one AZ be attached to an EC2 instance in another AZ?",
+            "a": "No"
+        },
+        {
+            "c": ["EC2","EBS"],
+            "q": "How do you create an encrypted EBS volume based on an unencrypted volume?",
+            "a": "Take a snapshot, make an encypted copy of the snapshot, then create the new volume based on the copy"
+        },
+        {
+            "c": ["IAM"],
+            "q": "What's the name of the API used to get temporary credentials from IAM in an Active Directory federation scenario?",
+            "a": "GetFederationToken"
+        },
+        {
+            "c": ["Route53"],
+            "q": "In relation to DNS, what does SOA stand for?",
+            "a": "Start of Authority"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What is the largest CIDR range available in a VPC?",
+            "a": "/16 (65,536 addresses)"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What is the smallest CIDR range available in a VPC?",
+            "a": "/28 (16 addresses)"
+        },
+        {
+            "c": ["VPC"],
+            "q": "How many addresses does Amazon reserve for internal use in a VPC subnet?",
+            "a": "5 (1st 4 and last 1)"
+        },
+        {
+            "c": ["VPC"],
+            "q": "How many internet gateways can be attached to a VPC?",
+            "a": "One"
+        },
+        {
+            "c": ["VPC"],
+            "q": "Does AWS support transitive VPC peering?",
+            "a": "No"
+        },
+        {
+            "c": ["VPC"],
+            "q": "Are AZ names consistent across AWS accounts?",
+            "a": "No, they are randomized."
+        },
+        {
+            "c": ["VPC"],
+            "q": "What setting must be altered on a NAT instance after creating it?",
+            "a": "Disable Source/Destination Checks"
+        },
+        {
+            "c": ["VPC"],
+            "q": "How many network ACLs can be associated with a subnet?",
+            "a": "One"
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": ""
+        },
+    ]
+}
