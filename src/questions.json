@@ -4,7 +4,8 @@
         {
             "c": ["SQS"],
             "q": "What is the default VisibilityTimeout for SQS?",
-            "a": "30 Seconds"
+            "a": "30 Seconds",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html"
         },
         {
             "c": ["SQS"],
@@ -140,6 +141,6 @@
             "c": [""],
             "q": "",
             "a": ""
-        },
+        }
     ]
 }
