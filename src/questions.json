@@ -10,137 +10,326 @@
         {
             "c": ["SQS"],
             "q": "What is the maximum Visibility Timeout for SQS?",
-            "a": "12 hours"
+            "a": "12 hours",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html"
         },
         {
             "c": ["SQS"],
             "q": "What's the maximum number of in-flight messages for a standard SQS queue?",
-            "a": "120,000"
+            "a": "120,000",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/limits-queues.html"
         },
         {
             "c": ["SQS"],
             "q": "What's the maximum number of in-flight messages for a FIFO queue?",
-            "a": "20,000"
+            "a": "20,000",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/limits-queues.html"
         },
         {
             "c": ["SQS"],
             "q": "What's the name of the error message if you exceed the SQS in-flight maximum?",
-            "a": "OverLimit"
+            "a": "OverLimit",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html"
         },
         {
             "c": ["SQS"],
             "q": "What's the SQS API that is used to change the VisibilityTimeout?",
-            "a": "ChangeMessageVisibility"
+            "a": "ChangeMessageVisibility",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibility.html"
         },
         {
             "c": ["SQS"],
             "q": "What is the maximum message retention period for an SQS queue?",
-            "a": "14 days"
+            "a": "14 days",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-lifecycle.html"
         },
         {
             "c": ["SQS"],
             "q": "What is the maximum message size in SQS?",
-            "a": "20 seconds"
+            "a": "256Kb",
+            "r": "https://aws.amazon.com/about-aws/whats-new/2013/06/18/amazon-sqs-announces-256KB-large-payloads/"
         },
         {
             "c": ["SQS"],
             "q": "What is the maximum DeliveryDelay of an SQS queue?",
-            "a": "15 minutes"
+            "a": "15 minutes",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-delay-queues.html"
+        },
+        {
+            "c": ["SQS"],
+            "q": "What is the maximum WaitTimeSeconds for SQS Long Polling?",
+            "a": "20 Seconds",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-long-polling.html"
         },
         {
             "c": ["EC2"],
-            "q": "What's the maximum size of an instance store boot volume",
-            "a": "10 GiB"
+            "q": "What's the maximum size of an EC2 instance store boot volume?",
+            "a": "10 GiB",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/add-instance-store-volumes.html"
         },
         {
             "c": ["EC2"],
             "q": "Can a volume in one AZ be attached to an EC2 instance in another AZ?",
-            "a": "No"
+            "a": "No",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
         },
         {
             "c": ["EC2","EBS"],
             "q": "How do you create an encrypted EBS volume based on an unencrypted volume?",
-            "a": "Take a snapshot, make an encypted copy of the snapshot, then create the new volume based on the copy"
+            "a": "Take a snapshot, make an encypted copy of the snapshot, then create the new volume based on the copy",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html"
         },
         {
             "c": ["IAM"],
             "q": "What's the name of the API used to get temporary credentials from IAM in an Active Directory federation scenario?",
-            "a": "GetFederationToken"
+            "a": "GetFederationToken",
+            "r": "https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html"
         },
         {
             "c": ["Route53"],
             "q": "In relation to DNS, what does SOA stand for?",
-            "a": "Start of Authority"
+            "a": "Start of Authority",
+            "r": "https://en.wikipedia.org/wiki/SOA_record"
         },
         {
             "c": ["VPC"],
             "q": "What is the largest CIDR range available in a VPC?",
-            "a": "/16 (65,536 addresses)"
+            "a": "/16 (65,536 addresses)",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html#vpc-sizing-ipv4"
         },
         {
             "c": ["VPC"],
             "q": "What is the smallest CIDR range available in a VPC?",
-            "a": "/28 (16 addresses)"
+            "a": "/28 (16 addresses)",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html#vpc-sizing-ipv4"
         },
         {
             "c": ["VPC"],
             "q": "How many addresses does Amazon reserve for internal use in a VPC subnet?",
-            "a": "5 (1st 4 and last 1)"
+            "a": "5 (1st 4 and last 1)",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html#vpc-sizing-ipv4"
         },
         {
             "c": ["VPC"],
             "q": "How many internet gateways can be attached to a VPC?",
-            "a": "One"
+            "a": "One",
+            "r": "https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-K8aG1ko2vP_Ia_miTol/number-of-internet-gateways-per-vpc"
         },
         {
             "c": ["VPC"],
             "q": "Does AWS support transitive VPC peering?",
-            "a": "No"
+            "a": "No",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide/vpc-peering-basics.html"
         },
         {
             "c": ["VPC"],
             "q": "Are AZ names consistent across AWS accounts?",
-            "a": "No, they are randomized."
+            "a": "No, they are randomized.",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions"
         },
         {
             "c": ["VPC"],
             "q": "What setting must be altered on a NAT instance after creating it?",
-            "a": "Disable Source/Destination Checks"
+            "a": "Disable Source/Destination Checks",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_NAT_Instance.html#EIP_Disable_SrcDestCheck"
         },
         {
             "c": ["VPC"],
             "q": "How many network ACLs can be associated with a subnet?",
-            "a": "One"
+            "a": "One",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html#ACLs"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What is the abbreviation for an EBS General Purpose SSD?",
+            "a": "gp2",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What is the abbreviation for an EBS Provisioned IOPS SSD?",
+            "a": "io1",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What is the abbreviation for an EBS Throughput Optimized HDD?",
+            "a": "st1",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What is the abbreviation for an EBS Cold HDD?",
+            "a": "sc1",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What is an EBS gp2 volume?",
+            "a": "General Purpose SSD",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What is an EBS io1 volume?",
+            "a": "Provisioned IOPS SSD",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What is an EBS st1 volume?",
+            "a": "Throughput Optimized HDD",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What is an EBS sc1 volume?",
+            "a": "Cold HDD",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What is the algorithm used to encrypt EBS volumes?",
+            "a": "AES-256 (256-bit Advanced Encryption Standard)",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "Can you modify the volume type, volume size, or IOPS capacity of an EBS volume without a service interruption?",
+            "a": "Yes",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html"
+        },
+        {
+            "c": ["VPC"],
+            "q": "In what order are network ACL rule evaluated?",
+            "a": "Ascending by Rule Number",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html#ACLs"
+        },
+        {
+            "c": ["VPC"],
+            "q": "At what 3 levels can VPC flow logs be created?",
+            "a": "VPC, Subnet, Network Interface",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/flow-logs.html"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What is the industry standard used to connect corporated networks to DirectConnect locations?",
+            "a": "802.1q VLAN",
+            "r": "https://aws.amazon.com/directconnect/"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What is the primary advantage of using DirectConnect instead of an IPSec VPN Connection?",
+            "a": "Bandwidth (FAQ says reduce costs, increase bandwidth, and provide a more consistent network experience, but the exam questions seem to favor bandwidth)",
+            "r": "https://aws.amazon.com/directconnect/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the simplest way to solve a network bottleneck on an EC2 instance?",
+            "a": "Increase the instance size (outdated exam questions... this is not necessarily true anymore)",
+            "r": ""
+        },
+        {
+            "c": ["RDS"],
+            "q": "What is the default port for a MySQL database instance?",
+            "a": "3306",
+            "r": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToInstance.html"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What is the network protocol used by common monitoring tools?",
+            "a": "ICMP",
+            "r": "https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What traffic is allowed by the default VPC network ACL?",
+            "a": "All inbound and outbound traffic",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html#default-network-acl"
+        },
+        {
+            "c": ["VPC"],
+            "q": "How can you deny traffic from a single internet IP to an EC2 instance with a public IP address?",
+            "a": "Set up a DENY rule on the network ACL. (Security groups don't have DENY rules)",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html#Rules"
+        },
+        {
+            "c": ["CW"],
+            "q": "Can CloudWatch alarms be temporarily disabled from the console?",
+            "a": "No, you have to use the API or CLI. (The exam might want you to know about the old CLI, mon-disable-alarm-actions, which is deprecated in favor of the aws cli)",
+            "r": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-disable-alarm-actions.html"
+        },
+        {
+            "c": ["EBS"],
+            "q": "What does PIOPS stand for?",
+            "a": "Provisioned Input Output Per Seconds",
+            "r": "https://aws.amazon.com/about-aws/whats-new/2012/07/31/announcing-provisioned-iops-for-amazon-ebs/"
+        },
+        {
+            "c": ["VPC"],
+            "q": "When creating a route to an internet gateway, what is the destination CIDR block?",
+            "a": "0.0.0.0/0",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html#route-tables-internet-gateway"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the URL used to get instance meta-data on an EC2 instance?",
+            "a": "http://169.254.169.254/latest/meta-data/",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-retrieval"
+        },
+        {
+            "c": ["SQS"],
+            "q": "Which SQS parameter can be used to siginificantly reduce the cost per message processed?",
+            "a": "WaitTimeSeconds (Long polling prevents excessive calls while the queue is empty)",
+            "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-long-polling.html"
+        },
+        {
+            "c": ["RDS"],
+            "q": "What is the maximum number of read replicas for a MySQL database?",
+            "a": "5",
+            "r": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html"
         },
         {
             "c": [""],
             "q": "",
-            "a": ""
+            "a": "",
+            "r": ""
         },
         {
             "c": [""],
             "q": "",
-            "a": ""
+            "a": "",
+            "r": ""
         },
         {
             "c": [""],
             "q": "",
-            "a": ""
+            "a": "",
+            "r": ""
         },
         {
             "c": [""],
             "q": "",
-            "a": ""
+            "a": "",
+            "r": ""
         },
         {
             "c": [""],
             "q": "",
-            "a": ""
+            "a": "",
+            "r": ""
         },
         {
             "c": [""],
             "q": "",
-            "a": ""
+            "a": "",
+            "r": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
         }
     ]
 }

@@ -37,8 +37,26 @@
   /*border: 1px solid red;*/
 }
 
+.hidden-button {
+  display:none;
+  /*border: 1px solid red;*/
+}
+
 .question-ref {
   margin-top: 40px;
   font-size: small;
+}
+
+.answer-box {
+  width:80%;
+  background-color: #FFEDCF;
+  margin: auto;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.answer-box h2 {
+  padding:20px;
 }
 

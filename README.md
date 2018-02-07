@@ -1,3 +1,11 @@
+# AWS Certification Flash Cards
+
+This is a simple application that helps you study for AWS certification exams. It consists of trivia questions grouped by category. The questions usually have one-word answers.
+
+## React
+
+_Below here are the docs that you get when you bootstrap an application._
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
