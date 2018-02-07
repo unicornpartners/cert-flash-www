@@ -1,0 +1,17 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - npm install
+  pre_build:
+    commands:
+      - echo "Nothing to pre_build"
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - aws s3 sync --delete build/ "s3://${BUCKET_NAME}"
+artifacts:
+  files:
+    - src/*
