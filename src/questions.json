@@ -213,7 +213,7 @@
         },
         {
             "c": ["VPC"],
-            "q": "What is the industry standard used to connect corporated networks to DirectConnect locations?",
+            "q": "What is the industry standard used to connect corporate networks to DirectConnect locations?",
             "a": "802.1q VLAN",
             "r": "https://aws.amazon.com/directconnect/"
         },
@@ -290,10 +290,28 @@
             "r": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["S3"],
+            "q": "What is the minimum size of an object in S3?",
+            "a": "0 bytes",
+            "r": "https://aws.amazon.com/s3/faqs/"
+        },
+        {
+            "c": ["S3"],
+            "q": "What is the maximum size of an object in S3?",
+            "a": "5 Tb",
+            "r": "https://aws.amazon.com/s3/faqs/"
+        },
+        {
+            "c": ["S3"],
+            "q": "What is the maximum size of an PUT to S3?",
+            "a": "5 Gb",
+            "r": "https://aws.amazon.com/s3/faqs/"
+        },
+        {
+            "c": ["S3"],
+            "q": "How do you upload objects larger than the maximum S3 PUT size?",
+            "a": "Multipart Upload",
+            "r": "https://aws.amazon.com/s3/faqs/"
         },
         {
             "c": [""],
