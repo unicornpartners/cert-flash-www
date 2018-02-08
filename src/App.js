@@ -199,6 +199,7 @@ class App extends Component {
                 return <Tab key={name}>{name}</Tab>;
               })
             }
+              <Tab>?</Tab>
             </TabList>
         
             {
@@ -206,6 +207,17 @@ class App extends Component {
                   return self.renderPanel(name);
               })
             }
+            
+            <TabPanel>
+              <h2>Help/About</h2>
+              <div className="help-topics">
+                <ul>
+                  <li>You can use &lt;Enter&gt;, &lt;Space&gt;, and &lt;RightArrow&gt; to show the answer and move to the next question.
+                      </li>
+                  <li>Ping ezbeard if you spot an error or you have a question you would like to add.</li>
+                </ul>
+              </div>
+            </TabPanel>
             
           </Tabs>
         </div>
