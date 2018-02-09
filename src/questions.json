@@ -86,7 +86,7 @@
             "r": "https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html"
         },
         {
-            "c": ["Route53"],
+            "c": ["R53"],
             "q": "In relation to DNS, what does SOA stand for?",
             "a": "Start of Authority",
             "r": "https://en.wikipedia.org/wiki/SOA_record"
@@ -314,22 +314,190 @@
             "r": "https://aws.amazon.com/s3/faqs/"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["EBS"],
+            "q": "What is the default limit for the number of EBS snapshots you can have per account?",
+            "a": "10,000",
+            "r": "https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["AWS"],
+            "q": "What is the global endpoint URL pattern for AWS services?",
+            "a": "https://{servicename}.amazonaws.com",
+            "r": "https://docs.aws.amazon.com/general/latest/gr/rande.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["EC2"],
+            "q": "By default, what's the maximum number of Elastic Load Balancers you may have per AWS account?",
+            "a": "20",
+            "r": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-limits.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "Does AWS copy launch permissions, user-defined tags, and Amazon S3 bucket permissions from the source AMI to the new AMI when copying an AMI?",
+            "a": "No",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/CopyingAMIs.html"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What is the default limit for the number of subnets you can have in a Region?",
+            "a": "1,000 (5 VPCs per region with 200 subnets each)",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Appendix_Limits.html#vpc-limits-vpcs-subnets"
+        },
+        {
+            "c": ["CW"],
+            "q": "What is the CloudWatch metrics namespace for CloudWatch Logs?",
+            "a": "AWS/Logs",
+            "r": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-namespaces.html"
+        },
+        {
+            "c": ["CW"],
+            "q": "What is the name of the API call to save a custom metric to CloudWatch?",
+            "a": "PutMetricData",
+            "r": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html"
+        },
+        {
+            "c": ["VPC"],
+            "q": "Does the VPC wizard automatically create a NAT Gateway in the public subnet when creating a VPC with a private and public subnet?",
+            "a": "Yes",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "Can an existing launch configuration be edited?",
+            "a": "No",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/change-launch-config.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "How far in advance can you schedule an Auto-Scaling activity?",
+            "a": "There is no limit (But choose 30 days if there are no better options on the exam)",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/schedule_time.html"
+        },
+        {
+            "c": ["CF"],
+            "q": "In CloudFormation, can automatic rollback on stack creation failure be disabled?",
+            "a": "Yes",
+            "r": "https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html"
+        },
+        {
+            "c": ["CW"],
+            "q": "Is detailed monitoring available for Elastic Map Reduce?",
+            "a": "No",
+            "r": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/UsingEMR_ViewingMetrics.html"
+        },
+        {
+            "c": ["CW"],
+            "q": "In which region is billing data available?",
+            "a": "us-east-1",
+            "r": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html"
+        },
+        {
+            "c": ["ELB"],
+            "q": "What is the response code that a load balancer expects from a healthy instance?",
+            "a": "200",
+            "r": "https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/ts-elb-healthcheck.html"
+        },
+        {
+            "c": ["ELB"],
+            "q": "By default, how does an auto scaling group determine the health of an instance?",
+            "a": "EC2 Status Checks",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-elb-healthcheck.html"
+        },
+        {
+            "c": ["AWS"],
+            "q": "What type of resource does Amazon Inspector evaluate?",
+            "a": "EC2 Instances",
+            "r": "https://docs.aws.amazon.com/inspector/latest/userguide/inspector_settingup.html#TagEC2Instances"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the latest generation of EC2 burstable performance instance types?",
+            "a": "T2",
+            "r": "https://aws.amazon.com/ec2/instance-types/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the latest generation of EC2 general purpose instance types?",
+            "a": "M5",
+            "r": "https://aws.amazon.com/ec2/instance-types/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the latest generation of EC2 compute intensive instance types?",
+            "a": "C5",
+            "r": "https://aws.amazon.com/ec2/instance-types/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the latest generation of EC2 memory-intensive instance types?",
+            "a": "X1/R4",
+            "r": "https://aws.amazon.com/ec2/instance-types/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the latest generation of EC2 GPU instance types?",
+            "a": "P3",
+            "r": "https://aws.amazon.com/ec2/instance-types/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the latest generation of EC2 SSD storage optimized types?",
+            "a": "I3",
+            "r": "https://aws.amazon.com/ec2/instance-types/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the latest generation of EC2 HDD storage optimized types?",
+            "a": "H1",
+            "r": "https://aws.amazon.com/ec2/instance-types/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "When an EC2-Classic instance is restarted, which IP addresses are retained?",
+            "a": "None",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "When an EC2-VPC instance is restarted, which IP addresses are retained?",
+            "a": "Private IPV4, IPV6, and EIP",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "When an EBS-backed EC2 instance is stopped, can the instance type be changed?",
+            "a": "Yes",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What EC2 feature allows you to pass startup scripts to an instance when it is created?",
+            "a": "User Data",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "Can a security group be set up with a DENY rule?",
+            "a": "No",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_SecurityGroups.html#VPCSecurityGroups"
+        },
+        {
+            "c": ["EC2"],
+            "q": "How often does Cloud Watch basic monitoring record EC2 metrics?",
+            "a": "Every 5 minutes",
+            "r": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ec2-metricscollected.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What EC2 feature should be used when launching instances that require low network latency, high network throughput, such as HPC?",
+            "a": "Cluster Placement Groups",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html"
+        },
+        {
+            "c": ["L"],
+            "q": "What is the maximum execution duration for a Lambda request?",
+            "a": "300 seconds (5 minutes)",
+            "r": "https://docs.aws.amazon.com/lambda/latest/dg/limits.html"
         },
         {
             "c": [""],

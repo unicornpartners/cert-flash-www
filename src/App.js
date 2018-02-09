@@ -15,6 +15,8 @@ class Category extends Component {
     this.category = props.category;
 
     this.state = this.createState();
+    
+    this.boundHandleKeyUp = this.handleKeyUp.bind(this);
   }
 
   /**
@@ -26,7 +28,10 @@ class Category extends Component {
       showAnswer: false,
       questionText: question.q,
       answer: question.a,
-      reference: question.r
+      reference: question.r,
+      current: this.category.current + 1,
+      total: this.category.questions.length,
+      name: this.category.fullName
     };
   }
 
@@ -70,11 +75,11 @@ class Category extends Component {
   }
 
   componentWillMount() {
-    document.addEventListener("keyup", this.handleKeyUp.bind(this));
+    document.addEventListener("keyup", this.boundHandleKeyUp);
   }
 
   componentWillUnmount() {
-    document.removeEventListener("keyup", this.handleKeyUp.bind(this));
+    document.removeEventListener("keyup", this.boundHandleKeyUp);
   }
 
   /**
@@ -86,6 +91,9 @@ class Category extends Component {
 
     return (
       <div>
+          <div className="current-total">
+            {this.state.name} Question {this.state.current} of {this.state.total}
+          </div>
           <h2>{this.state.questionText}</h2>
           
           <div className={this.state.showAnswer ? 'hidden-button' : ''}>
@@ -135,12 +143,38 @@ class App extends Component {
       // Add the ALL category
       let cats = q.c;
       cats.push("ALL");
+      
+      let fullNames = {
+        "ALL": "All",
+        "S3": "Simple Storage Service",
+        "EC2": "Elastic Compute Cloud",
+        "CW": "Cloud Watch",
+        "VPC": "Virtual Private Cloud",
+        "EBS": "Elastic Block Store",
+        "RDS": "Relational Database Service",
+        "IAM": "Identity and Access Management",
+        "SQS": "Simple Queue Service",
+        "R53": "Route 53",
+        "CF": "Cloud Formation",
+        "ECS": "EC2 Container Service",
+        "L": "Lambda"
+      };
+      
+      const getFullName = function(name) {
+        let fn = fullNames[name];
+        if (!fn) {
+          fn = name;
+        }
+        return fn;
+      };
 
       for (let j = 0; j < cats.length; j++) {
         let categoryName = cats[j];
         if (!this.state.categories[categoryName]) {
           this.state.categoryNames.push(categoryName);
           this.state.categories[categoryName] = {
+            "name": categoryName,
+            "fullName": getFullName(categoryName),
             "questions": [],
             "current": 0
           };
@@ -196,7 +230,13 @@ class App extends Component {
             <TabList>
             {
               this.state.categoryNames.map(function(name) {
-                return <Tab key={name}>{name}</Tab>;
+                let cct = self.state.categories[name].questions.length;
+                return (
+                  <Tab key={name}>
+                    <div className="tab-name">{name}
+                      <sub>{cct}</sub>
+                    </div></Tab>
+                );
               })
             }
               <Tab>?</Tab>
