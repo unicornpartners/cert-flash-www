@@ -2,6 +2,9 @@
 
 This is a simple application that helps you study for AWS certification exams. It consists of trivia questions grouped by category. The questions usually have one-word answers.
 
+## TODO
+- Allow configuration of separate question banks
+
 ## React
 
 _Below here are the docs that you get when you bootstrap an application._
