@@ -500,6 +500,60 @@
             "r": "https://docs.aws.amazon.com/lambda/latest/dg/limits.html"
         },
         {
+            "c": ["EC2"],
+            "q": "What is the maximum size of EC2 instance user data?",
+            "a": "16KB",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What is the CIDR block for the default VPC created in a new account?",
+            "a": "172.31.0.0/16",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What is the size of the subnet created in each availability zone of the default VPC?",
+            "a": "/20 (4,096 addresses)",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html"
+        },
+        {
+            "c": ["VPC"],
+            "q": "Is it possible to peer two VPCs in different regions?",
+            "a": "Yes, but... this was announced in November, 2017, so the exam may expect No",
+            "r": "https://aws.amazon.com/about-aws/whats-new/2017/11/announcing-support-for-inter-region-vpc-peering/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the maximum number of tags per resource?",
+            "a": "50",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-tagging.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What prefix is reserved for use in tag names and values?",
+            "a": ":aws",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-tagging.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "Can an auto scaling group span regions?",
+            "a": "No",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-availability-zone.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "Can an auto scaling group span availability zones?",
+            "a": "Yes",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-availability-zone.html"
+        },  
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
             "c": [""],
             "q": "",
             "a": "",
