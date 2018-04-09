@@ -157,7 +157,8 @@ class App extends Component {
         "R53": "Route 53",
         "CF": "Cloud Formation",
         "ECS": "EC2 Container Service",
-        "L": "Lambda"
+        "L": "Lambda",
+        "ASG": "Auto Scaling Groups"
       };
       
       const getFullName = function(name) {

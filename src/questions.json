@@ -548,6 +548,84 @@
             "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-availability-zone.html"
         },  
         {
+            "c": ["CLI"],
+            "q": "What CLI output format is geared towards human viewing?",
+            "a": "Table",
+            "r": "https://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html#table-output"
+        },
+        {
+            "c": ["SDK"],
+            "q": "Is there an AWS SDK available for Perl?",
+            "a": "Yes",
+            "r": "https://aws.amazon.com/blogs/developer/hello-perl-developers/"
+        },
+        {
+            "c": ["CLI"],
+            "q": "How can AWS CLI output be filtered?",
+            "a": "With the --query option and JMESPath",
+            "r": "https://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html#controlling-output-filter"
+        },
+        {
+            "c": ["CF"],
+            "q": "What are the valid file types for a CloudFormation template?",
+            "a": "JSON and YAML",
+            "r": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-howdoesitwork.html"
+        },
+        {
+            "c": ["CF"],
+            "q": "What CloudFormation IAM action is required to upload template files via the console?",
+            "a": "cloudformation:CreateUploadBucket",
+            "r": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html"
+        },
+        {
+            "c": ["CF"],
+            "q": "Using the CLI, how do you acknowledge that CloudFormation might create IAM resources?",
+            "a": "--capabilites CAPABILITY_IAM",
+            "r": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html"
+        },
+        {
+            "c": ["ASG"],
+            "q": "What are the two wait states associated with Auto Scaling Group lifecycle hooks?",
+            "a": "Pending:Wait and Terminating:Wait",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html"
+        },
+        {
+            "c": ["ASG"],
+            "q": "What is the default amount of time an instance can remain in a wait state when lifecycle hooks have been configured?",
+            "a": "1 hour (3600 seconds)",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html"
+        },
+        {
+            "c": ["ASG"],
+            "q": "Without lifecycle hooks enabled, which auto scaling instance state follows Pending?",
+            "a": "InService",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroupLifecycle.html"
+        },
+        {
+            "c": ["ASG"],
+            "q": "What happens to the health status of an auto scaling instance in the Standby state when it is terminated?",
+            "a": "The health status stays the same",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enter-exit-standby.html"
+        },
+        {
+            "c": ["ASG"],
+            "q": "Without instance protection enabled, what is the order of termination in an auto scaling group during a scale in event?",
+            "a": "AZ with the most, Oldest launch config, closest to billing hour, random",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html"
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
             "c": [""],
             "q": "",
             "a": "",
