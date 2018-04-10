@@ -584,40 +584,40 @@
             "r": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html"
         },
         {
-            "c": ["ASG"],
-            "q": "What are the two wait states associated with Auto Scaling Group lifecycle hooks?",
+            "c": ["EC2"],
+            "q": "What are the two wait states associated with auto scaling group lifecycle hooks?",
             "a": "Pending:Wait and Terminating:Wait",
             "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html"
         },
         {
-            "c": ["ASG"],
+            "c": ["EC2"],
             "q": "What is the default amount of time an instance can remain in a wait state when lifecycle hooks have been configured?",
             "a": "1 hour (3600 seconds)",
             "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html"
         },
         {
-            "c": ["ASG"],
+            "c": ["EC2"],
             "q": "Without lifecycle hooks enabled, which auto scaling instance state follows Pending?",
             "a": "InService",
             "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroupLifecycle.html"
         },
         {
-            "c": ["ASG"],
+            "c": ["EC2"],
             "q": "What happens to the health status of an auto scaling instance in the Standby state when it is terminated?",
             "a": "The health status stays the same",
             "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enter-exit-standby.html"
         },
         {
-            "c": ["ASG"],
+            "c": ["EC2"],
             "q": "Without instance protection enabled, what is the order of termination in an auto scaling group during a scale in event?",
             "a": "AZ with the most, Oldest launch config, closest to billing hour, random",
             "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["IAM"],
+            "q": "Can IAM Groups belong to other groups?",
+            "a": "No",
+            "r": "https://aws.amazon.com/iam/faqs/"
         },
         {
             "c": [""],
