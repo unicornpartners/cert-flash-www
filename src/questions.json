@@ -620,10 +620,10 @@
             "r": "https://aws.amazon.com/iam/faqs/"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["EC2"],
+            "q": "What are light, medium, and heavy utilization reserved instance?",
+            "a": "They don't exist any more but you need to know them for the exam. See link to old blog post below.",
+            "r": "https://aws.amazon.com/blogs/aws/reserved-instance-options-for-amazon-ec2/"
         },
         {
             "c": [""],
