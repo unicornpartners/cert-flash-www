@@ -626,6 +626,66 @@
             "r": "https://aws.amazon.com/blogs/aws/reserved-instance-options-for-amazon-ec2/"
         },
         {
+            "c": ["EBK"],
+            "q": "What is the name of the Elastic Beanstalk–specific JSON file that describes how to deploy a set of Docker containers as an Elastic Beanstalk application",
+            "a": "Dockerrun.aws.json",
+            "r": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_v2config.html"
+        },
+        {
+            "c": ["EBK"],
+            "q": "What is the name of your Elastic Beanstalk environment type if you are not using 'Single Instance'?",
+            "a": "Load-balancing, Autoscaling",
+            "r": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-types.html"
+        },
+        {
+            "c": ["OPS"],
+            "q": "Can you mix Windows and Linux instances in an OpsWorks Stack?",
+            "a": "No",
+            "r": "https://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-os.html"
+        },
+        {
+            "c": ["CF"],
+            "q": "In what parts of a CloudFormation template can you use intrinsic functions?",
+            "a": "Resource properties, outputs, metadata attributes, and update policy attributes",
+            "r": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html"
+        },
+        {
+            "c": ["OPS"],
+            "q": "What are the five OpsWorks Stacks lifecycle events?",
+            "a": "Setup, Configure, Deploy, Undeploy, Shutdown",
+            "r": "https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-events.html"
+        },
+        {
+            "c": ["OPS"],
+            "q": "Which OpsWorks Stacks lifecycle event runs on all instances in a stack?",
+            "a": "Configure",
+            "r": "https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-events.html"
+        },
+        {
+            "c": ["CW"],
+            "q": "How long are CloudWatch metrics retained?",
+            "a": "14 Days.. or longer depending on when the exam was written",
+            "r": "https://aws.amazon.com/about-aws/whats-new/2016/11/cloudwatch-extends-metrics-retention-and-new-user-interface/"
+        },
+        {
+            "c": ["CW"],
+            "q": "What are the three CloudWatch alarm states?",
+            "a": "OK, ALARM, INSUFFICIENT_DATA",
+            "r": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html"
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
             "c": [""],
             "q": "",
             "a": "",

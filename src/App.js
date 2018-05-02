@@ -157,7 +157,9 @@ class App extends Component {
         "R53": "Route 53",
         "CF": "Cloud Formation",
         "ECS": "EC2 Container Service",
-        "L": "Lambda"
+        "L": "Lambda",
+        "EBK": "Elastic Beanstalk",
+        "OPS": "Ops Works"
       };
       
       const getFullName = function(name) {
