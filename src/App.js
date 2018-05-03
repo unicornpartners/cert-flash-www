@@ -159,7 +159,8 @@ class App extends Component {
         "ECS": "EC2 Container Service",
         "L": "Lambda",
         "EBK": "Elastic Beanstalk",
-        "OPS": "Ops Works"
+        "OPS": "Ops Works",
+        "CT": "CloudTrail"
       };
       
       const getFullName = function(name) {

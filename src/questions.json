@@ -674,10 +674,64 @@
             "r": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["OPS"],
+            "q": "What is the maximum number of version you can rollback with the OpsWorks DeploymentCommand?",
+            "a": "4",
+            "r": "https://docs.aws.amazon.com/opsworks/latest/APIReference/API_DeploymentCommand.html"
+        },
+        {
+            "c": ["OPS"],
+            "q": "What is the state of an OpsWorks Stacks instance after a recipe fails?",
+            "a": "setup_failed",
+            "r": "https://docs.aws.amazon.com/opsworks/latest/userguide/troubleshoot-debug-login.html"
+        },
+        {
+            "c": ["ELB"],
+            "q": "What is the default Elastic Load Balancing (classic) log file interval?",
+            "a": "60 minutes (the only other choice is 5 minutes)",
+            "r": "https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html"
+        },
+        {
+            "c": ["EBK"],
+            "q": "How can you prevent hitting the application version limit in Elastic Beanstalk?",
+            "a": "Apply an application version lifecycle policy",
+            "r": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-lifecycle.html"
+        },
+        {
+            "c": ["CF"],
+            "q": "What CLI command can be used to get descriptions of all resources in a CloudFormation stack?",
+            "a": "aws cloudformation list-stack-resources",
+            "r": "https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-stack-resources.html"
+        },
+        {
+            "c": ["CF"],
+            "q": "What property can be used to mask a CloudFormation parameter value with asterisks?",
+            "a": "NoEcho",
+            "r": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "How can you configure EC2 instances without actually logging in to them with SSH?",
+            "a": "AWS Systems Manager Run Command",
+            "r": "https://docs.aws.amazon.com/systems-manager/latest/userguide/rc-console.html"
+        },
+        {
+            "c": ["OPS"],
+            "q": "Can you use an application load balancer with OpsWorks Stacks?",
+            "a": "No, and the classic load balancer must be dedicated to a single layer",
+            "r": "https://docs.aws.amazon.com/opsworks/latest/userguide/layers-elb.html"
+        },
+        {
+            "c": ["CT"],
+            "q": "What type of CloudTrail events are not specific to a region?",
+            "a": "Global service events",
+            "r": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html#cloudtrail-concepts-global-service-events"
+        },
+        {
+            "c": ["EC2"],
+            "q": "Can CloudHSM be used to offload SSL from EC2 instances?",
+            "a": "Yes, with the AWS CloudHSM software library for OpenSSL",
+            "r": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/ssl-offload.html"
         },
         {
             "c": [""],
