@@ -253,7 +253,7 @@ class App extends Component {
             }
             
             <TabPanel>
-              <h2>Help/About</h2>
+              <h2>Help</h2>
               <div className="help-topics">
                 <ul>
                   <li>You can use &lt;Enter&gt;, &lt;Space&gt;, and &lt;RightArrow&gt; to show the answer and move to the next question.
