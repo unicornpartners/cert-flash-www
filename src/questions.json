@@ -279,7 +279,7 @@
         },
         {
             "c": ["SQS"],
-            "q": "Which SQS parameter can be used to siginificantly reduce the cost per message processed?",
+            "q": "Which SQS parameter can be used to significantly reduce the cost per message processed?",
             "a": "WaitTimeSeconds (Long polling prevents excessive calls while the queue is empty)",
             "r": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-long-polling.html"
         },
@@ -732,6 +732,216 @@
             "q": "Can CloudHSM be used to offload SSL from EC2 instances?",
             "a": "Yes, with the AWS CloudHSM software library for OpenSSL",
             "r": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/ssl-offload.html"
+        },
+        {
+            "c": ["PR"],
+            "q": "How many active customers does AWS have per month?",
+            "a": "Millions",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "What was AWS Q1 2018 revenue? How much did it change y/y? Total Revenue?",
+            "a": "Q1 2018 revenue for the AWS segment increased 49% y/y to $5.44 billion, making AWS a more than $20 billion dollar run rate business",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "Was AWS the fastest IT vendor to reach a $10B run rate?",
+            "a": "Yes",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "In how many regions and availability zones does AWS operate?",
+            "a": "The AWS Cloud operates 54 Availability Zones within 18 geographic Regions and one local region around the world",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "What plans does AWS have for future regions?",
+            "a": "AWS has announced plans for 12 more Availability Zones and four more Regions in Bahrain, Hong Kong SAR, Sweden, and a second AWS GovCloud Region in the US coming online between now and early 2019.",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many edge locations does AWS have?",
+            "a": "The global network of AWS Edge locations now consists of 114 Points of Presence (103 edge locations and 11 regional edge caches), in 56 cities across 24 countries including locations in the United States, Canada, Europe, Asia, Australia and South America",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many times has AWS reduced prices?",
+            "a": "We've reduced prices 65 times since AWS launched in 2006 [as of March 2018]",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many services does AWS have?",
+            "a": "AWS has been continually expanding its services to support virtually any cloud workload, and it now has more than 100 services that range from compute, storage, networking, database, analytics, application services, deployment, management, developer, mobile, Internet of Things (IoT), Artificial Intelligence (AI), security, hybrid and enterprise applications.",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many new features and services did AWS release in 2011?",
+            "a": "80",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many new features and services did AWS release in 2012?",
+            "a": "160",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many new features and services did AWS release in 2013?",
+            "a": "280",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many new features and services did AWS release in 2014?",
+            "a": "516",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many new features and services did AWS release in 2015?",
+            "a": "722",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many new features and services did AWS release in 2016?",
+            "a": "1,017",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many new features and services did AWS release in 2017?",
+            "a": "1,430",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many objects does S3 hold? How many requests per second?",
+            "a": "Trillions of objects, millions of requests per second",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "What is the fastest growning service in AWS history?",
+            "a": "Amazon Aurora",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many databases have been migrated with AWS DMS?",
+            "a": "Over 64,000",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many customers use Amazon DynamoDB?",
+            "a": "More than 100,000",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many requests does Amazon DynamoDB handle?",
+            "a": "More than a trillion per day",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many customers does Amazon RDS have?",
+            "a": "Hundreds of thousands",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many hours per month of AWS Marketplace do customers use?",
+            "a": "481 million hours a month",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "What is the size of AWS Marketplace?",
+            "a": "Overall, the AWS Marketplace offers 35 categories, and more than 4,200 software listings from more than 1,280 ISVs.",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How many customers use AWS Marketplace?",
+            "a": "More than 160,000 active customers are using software from the AWS Marketplace",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How big is the AWS Partner Network?",
+            "a": "The AWS Partner Network has tens of thousands of APN Partners from all across the globe and added over 10,000 new APN Partners in 2017",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How big is the AWS Partner Network outside the US?",
+            "a": "Over 60% of APN Partners are headquartered outside the US. For the year ending September 30, 2017, EMEA was the region that contributed the most new non-US headquartered APN Partners, and India was the country that contributed the most new non-US headquartered APN Partners, with India accounting for almost 50% of all new APAC-headquartered APN Partners.",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How big is the AWS Public Sector Partner Network?",
+            "a": "The AWS Public Sector Partner Program includes over 550 APN Partners with solutions and experience in delivering on a combination of government, education, and non-profit customer missions around the world",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "What can you tell me about Landsat?",
+            "a": "Over 1 million scenes are now available on Landsat for AWS, and since its launch in March 2015, the data has been requested over 7 billion times",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "What can you tell me about AWS Educate?",
+            "a": "More than 1,500 institutions are members of AWS Educate, including Carnegie Mellon University, Cornell Tech, Seoul National University and the National College of Ireland. The top 10 Global Computer Science & Information Systems institutions in the 2017 QS World University Rankings are members of AWS Educate.",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "What can you tell me about GovCloud growth?",
+            "a": "The AWS GovCloud (US) Region has 185% compounded annual growth rate since 2011",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "How do you count customers?",
+            "a": "References to AWS customers mean unique AWS customer accounts, which are unique e-mail addresses that are eligible to use AWS services. This includes AWS accounts in the AWS free tier. Multiple users accessing AWS services via one account are counted as a single account. Customers are considered active when they have had AWS usage activity during the preceding one-month period. AWS has millions of active customers.",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "Can you name some startups that are hosted on AWS?",
+            "a": "Netflix, Airbnb, SmugMug, Pinterest, Supercell, Lyft, Slack, Domo, Stripe, Adroll",
+            "r": ""
+        },
+        {
+            "c": ["PR"],
+            "q": "Can you name some companies that have saved significant amounts of money by moving to AWS?",
+            "a": "Dow Jones has estimated that migrating its data centers to AWS will contribute to a global savings of $100 million in infrastructure costs. The Commonwealth Bank of Australia has halved its storage costs and is estimating it will save hundreds of millions of dollars. Another example is the US Navy, which is moving workloads to AWS and is saving as much as 60% over on-premises or hosting. ",
+            "r": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
         },
         {
             "c": [""],

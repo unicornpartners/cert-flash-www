@@ -160,7 +160,8 @@ class App extends Component {
         "L": "Lambda",
         "EBK": "Elastic Beanstalk",
         "OPS": "Ops Works",
-        "CT": "CloudTrail"
+        "CT": "CloudTrail",
+        "PR": "Tier 2 Speaker Cert"
       };
       
       const getFullName = function(name) {
