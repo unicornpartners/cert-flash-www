@@ -116,21 +116,80 @@ class Category extends Component {
 }
 
 /**
+ * Read a questions file and replace questions.json.
+ */
+class FileInput extends React.Component {
+    constructor(props) {
+      super(props);
+      this.uploadFile = this.uploadFile.bind(this);
+      this.onLoadQuestions = props.onLoadQuestions;
+      console.info('onLoadQuestions', this.onLoadQuestions);
+    }
+    
+    uploadFile(event) {
+        let file = event.target.files[0];
+        console.log(file);
+        var self = this;
+        
+        if (file) {
+          
+          const fileReader = new FileReader();
+          
+          fileReader.onload = function(loadEvent) {
+              const fileText = loadEvent.target.result;
+              
+              //console.log(fileText);
+          
+              const newQuestions = JSON.parse(fileText);
+              
+              if (!newQuestions.questions) {
+                console.log("Missing questions");
+              } else {
+                console.log(`Loaded ${newQuestions.questions.length} questions`);
+                self.onLoadQuestions(newQuestions);
+              }
+          };
+          
+          fileReader.readAsText(file);
+          
+        }
+    }
+    
+    render() {
+      return <span>
+        <input type="file"
+        name="myFile"
+        onChange={this.uploadFile} />
+      </span>
+    }
+}
+
+/**
  * Renders the top-level category panels.
  */
 class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
+    this.state = this.createState(questions);
+    this.loadQuestions = this.loadQuestions.bind(this);
+  }
+  
+  loadQuestions(newQuestions) {
+    this.setState(this.createState(newQuestions)); 
+  }
+    
+  createState(questions) {
+  
+    const state = { 
       questions: questions.questions,
       categoryNames: [],
       categories: {}
     };
 
     // Create a dictionary of category names to questions
-    for (let i = 0; i < this.state.questions.length; i++) {
-      let q = this.state.questions[i];
+    for (let i = 0; i < state.questions.length; i++) {
+      let q = state.questions[i];
 
       if (q.q === "") {
         continue;
@@ -174,25 +233,27 @@ class App extends Component {
 
       for (let j = 0; j < cats.length; j++) {
         let categoryName = cats[j];
-        if (!this.state.categories[categoryName]) {
-          this.state.categoryNames.push(categoryName);
-          this.state.categories[categoryName] = {
+        if (!state.categories[categoryName]) {
+          state.categoryNames.push(categoryName);
+          state.categories[categoryName] = {
             "name": categoryName,
             "fullName": getFullName(categoryName),
             "questions": [],
             "current": 0
           };
         }
-        this.state.categories[categoryName].questions.push(q);
+        state.categories[categoryName].questions.push(q);
       }
 
     }
 
     // Shuffle the questions in each category
-    for (let i = 0; i < this.state.categoryNames.length; i++) {
-      let categoryName = this.state.categoryNames[i];
-      this.shuffle(this.state.categories[categoryName].questions);
+    for (let i = 0; i < state.categoryNames.length; i++) {
+      let categoryName = state.categoryNames[i];
+      this.shuffle(state.categories[categoryName].questions);
     }
+    
+    return state;
   }
 
   /**
@@ -259,6 +320,7 @@ class App extends Component {
                   <li>You can use &lt;Enter&gt;, &lt;Space&gt;, and &lt;RightArrow&gt; to show the answer and move to the next question.
                       </li>
                   <li>Ping ezbeard if you spot an error or you have a question you would like to add.</li>
+                  <li><FileInput onLoadQuestions={this.loadQuestions} /></li>
                 </ul>
               </div>
             </TabPanel>
