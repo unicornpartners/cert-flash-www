@@ -16,4 +16,4 @@ artifacts:
   type: zip
   discard-paths: yes
   files:
-    - build/**/*
+    - build/*
