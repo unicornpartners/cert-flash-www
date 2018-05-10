@@ -734,28 +734,28 @@
             "r": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/ssl-offload.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["OPS"],
+            "q": "How long does OpsWorks Stacks wait for a response from an instance before considering it as failed?",
+            "a": "5 minutes",
+            "r": "https://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-autohealing.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["CW"],
+            "q": "What is the name of the CloudWatch alarm that can be used to recover an EC2 instance?",
+            "a": "StatusCheckFailed_System ",
+            "r": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingAlarmActions.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["EC2"],
+            "q": "When the RecordLifecycleActionHeartbeat operation is used on an auto scaling instance, what happens to the lifecycle timeout?",
+            "a": "It is increased by the initial setting for the timeout",
+            "r": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["CF"],
+            "q": "What happens when CloudFormation tries to delete an S3 bucket with objects in it?",
+            "a": "The action fails, since you have to delete all objects from an S3 bucket before CloudFormation can delete the bucket. (Same goes for security groups with EC2 instances)",
+            "r": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html"
         },
         {
             "c": [""],
