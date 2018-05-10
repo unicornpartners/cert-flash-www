@@ -14,5 +14,6 @@ phases:
       - aws s3 sync --delete build/ "s3://${BUCKET_NAME}"
 artifacts:
   type: zip
+  discard-paths: yes
   files:
     - build/**/*
