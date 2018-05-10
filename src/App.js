@@ -108,7 +108,7 @@ class Category extends Component {
             
             <button onClick={() => this.handleNextClick()}>Next</button>
           
-            <div className="question-ref"><a href={this.state.reference}>{this.state.reference}</a></div>
+            <div className="question-ref"><a target="_new" href={this.state.reference}>{this.state.reference}</a></div>
           </div>
         </div>
     );
