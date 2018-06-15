@@ -220,7 +220,10 @@ class App extends Component {
         "EBK": "Elastic Beanstalk",
         "OPS": "Ops Works",
         "CT": "CloudTrail",
-        "PR": "Tier 2 Speaker Cert"
+        "PR": "Tier 2 Speaker Cert",
+        "CFT": "Cloud Front",
+        "DC": "DirectConnect",
+        "RS": "Redshift"
       };
       
       const getFullName = function(name) {

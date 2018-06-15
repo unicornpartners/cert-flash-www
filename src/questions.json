@@ -758,10 +758,40 @@
             "r": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["CFT"],
+            "q": "What happens if you set the TTL for an origin to zero in CloudFront?",
+            "a": "CloudFront issues a GET request to the origin with the If-Modified-Since header",
+            "r": "https://stackoverflow.com/questions/10621099/what-is-a-ttl-0-in-cloudfront-useful-for"
+        },
+        {
+            "c": ["DC"],
+            "q": "With DirectConnect, what is the difference between a public and private virtual interface (VIF)?",
+            "a": "Private VIFs connect to a VPC. Pubic VIFs connect to AWS resources outside of a VPC, such as S3.",
+            "r": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html"
+        },
+        {
+            "c": ["VPC"],
+            "q": "What feature provides connectivity between remote customer sites?",
+            "a": "AWS VPN CloudHub",
+            "r": "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPN_CloudHub.html"
+        },
+        {
+            "c": ["S3"],
+            "q": "Which Storage Gateway volume option is used primarily as a backup strategy?",
+            "a": "Gateway Stored Volumes",
+            "r": "https://docs.aws.amazon.com/storagegateway/latest/userguide/WhatIsStorageGateway.html"
+        },
+        {
+            "c": ["RS"],
+            "q": "What Redshift feature allows you to segregate queries into queues by priority?",
+            "a": "Amazon Redshift workload management (WLM)",
+            "r": "https://docs.aws.amazon.com/redshift/latest/dg/c_workload_mngmt_classification.html"
+        },
+        {
+            "c": ["RDS"],
+            "q": "Is it possible to create cross-region replicas for MySQL?",
+            "a": "Yes",
+            "r": "https://aws.amazon.com/blogs/aws/cross-region-read-replicas-for-amazon-rds-for-mysql/"
         },
         {
             "c": [""],
