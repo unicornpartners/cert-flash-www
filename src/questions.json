@@ -794,6 +794,66 @@
             "r": "https://aws.amazon.com/blogs/aws/cross-region-read-replicas-for-amazon-rds-for-mysql/"
         },
         {
+            "c": ["ELB"],
+            "q": "Is it possible to see the original client IP address with TCP load balancing?",
+            "a": "Yes, with Proxy Protocol enabled",
+            "r": "https://aws.amazon.com/blogs/aws/elastic-load-balancing-adds-support-for-proxy-protocol/"
+        },
+        {
+            "c": ["VPC"],
+            "q": "Is it possible to expand the CIDR block of a VPC after it is created?",
+            "a": "Yes, but the feature was added in August 2017, so be mindful of when your exam was written.",
+            "r": "https://aws.amazon.com/about-aws/whats-new/2017/08/amazon-virtual-private-cloud-vpc-now-allows-customers-to-expand-their-existing-vpcs/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "How many instance roles can be attached to an EC2 instance?",
+            "a": "One",
+            "r": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html"
+        },
+        {
+            "c": ["IAM"],
+            "q": "When you create an IAM role in the console, what is the name of the container for that role that is created automatically for you?",
+            "a": "Instance profile",
+            "r": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html"
+        },
+        {
+            "c": ["EC2"],
+            "q": "Can an instance profile be associated with a running EC2 instance?",
+            "a": "Yes, but this feature was launched in Feb 2017, so be careful with exams written before that date.",
+            "r": "https://aws.amazon.com/blogs/security/new-attach-an-aws-iam-role-to-an-existing-amazon-ec2-instance-by-using-the-aws-cli/"
+        },
+        {
+            "c": ["EC2"],
+            "q": "What is the output of the VM Import process when using the AWS CLI?",
+            "a": "An AMI (the EC2 CLI can be used to directly import to an instance)",
+            "r": "https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html"
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
+            "c": [""],
+            "q": "",
+            "a": "",
+            "r": ""
+        },
+        {
             "c": [""],
             "q": "",
             "a": "",
