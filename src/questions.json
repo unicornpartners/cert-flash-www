@@ -830,16 +830,16 @@
             "r": "https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["S3"],
+            "q": "Can you modify S3 object metadata after the object has been created?",
+            "a": "No",
+            "r": "https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html"
         },
         {
-            "c": [""],
-            "q": "",
-            "a": "",
-            "r": ""
+            "c": ["RDS"],
+            "q": "Are RDS read replicas updated synchronously or asynchronously?",
+            "a": "Asynchronously",
+            "r": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html"
         },
         {
             "c": [""],
